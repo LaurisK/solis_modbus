@@ -270,7 +270,8 @@ class ModbusController:
             await self.connect()
             async with self.poll_lock:
                 await self.inter_frame_wait()
-                result = await self.client.read_input_registers(address=register, count=count, unit=self.device_id)
+                # Pass slave as 3rd positional argument (pymodbus compatibility)
+                result = await self.client.read_input_registers(register, count, self.device_id)
                 _LOGGER.debug(
                     f"({self.host}.{self.device_id}) Read Input Registers: register = {register}, count = {count}")
 
@@ -302,7 +303,8 @@ class ModbusController:
             await self.connect()
             async with self.poll_lock:
                 await self.inter_frame_wait()
-                result = await self.client.read_holding_registers(address=register, count=count, unit=self.device_id)
+                # Pass slave as 3rd positional argument (pymodbus compatibility)
+                result = await self.client.read_holding_registers(register, count, self.device_id)
                 _LOGGER.debug(
                     f"({self.host}.{self.device_id}) Read Holding Registers: register = {register}, count = {count}")
 

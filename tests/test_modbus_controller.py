@@ -104,7 +104,7 @@ class TestModbusControllerTCP(IsolatedAsyncioTestCase):
         result = await self.controller.async_read_input_register(100, 1)
 
         self.assertEqual([42], result)
-        self.mock_client.read_input_registers.assert_called_once_with(address=100, count=1, unit=1)
+        self.mock_client.read_input_registers.assert_called_once_with(100, 1, 1)
 
     async def test_async_read_input_register_failure(self):
         """Test failed read of input register."""
@@ -126,7 +126,7 @@ class TestModbusControllerTCP(IsolatedAsyncioTestCase):
         result = await self.controller.async_read_holding_register(100, 1)
 
         self.assertEqual([42], result)
-        self.mock_client.read_holding_registers.assert_called_once_with(address=100, count=1, unit=1)
+        self.mock_client.read_holding_registers.assert_called_once_with(100, 1, 1)
 
     async def test_async_read_holding_register_failure(self):
         """Test failed read of holding register."""
@@ -300,7 +300,7 @@ class TestModbusControllerSerial(IsolatedAsyncioTestCase):
         result = await self.controller.async_read_input_register(100, 1)
 
         self.assertEqual([42], result)
-        self.mock_client.read_input_registers.assert_called_once_with(address=100, count=1, unit=1)
+        self.mock_client.read_input_registers.assert_called_once_with(100, 1, 1)
 
     async def test_async_read_input_register_failure(self):
         """Test failed read of input register."""
@@ -322,7 +322,7 @@ class TestModbusControllerSerial(IsolatedAsyncioTestCase):
         result = await self.controller.async_read_holding_register(100, 1)
 
         self.assertEqual([42], result)
-        self.mock_client.read_holding_registers.assert_called_once_with(address=100, count=1, unit=1)
+        self.mock_client.read_holding_registers.assert_called_once_with(100, 1, 1)
 
     async def test_async_read_holding_register_failure(self):
         """Test failed read of holding register."""
