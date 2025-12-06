@@ -163,8 +163,9 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry):
     hass.data[DOMAIN][entry.entry_id] = entry
     _LOGGER.info(f"Loaded Solis Modbus Integration ({connection_type}) with Model: {config.get('model')}")
 
-    # Migrate unique_ids if needed
-    await async_migrate_unique_ids(hass, entry, host, port)
+    # Migrate unique_ids if needed (TCP only)
+    if connection_type == CONN_TYPE_TCP:
+        await async_migrate_unique_ids(hass, entry, host, port)
 
     poll_interval_fast = config.get("poll_interval_fast", 5)
     poll_interval_normal = config.get("poll_interval_normal", 15)
