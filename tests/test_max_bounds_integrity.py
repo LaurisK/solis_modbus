@@ -118,6 +118,16 @@ def test_the_rating_is_only_ever_an_opt_in(entity):
 NEGATIVE_MIN_MARKERS = [e for e in ENTITIES if e.get("min", 0) < 0 and e.get("max") is None]
 
 
+def test_the_signed_marker_registers_still_exist():
+    """An empty list would make the parametrized contract test below vanish silently.
+
+    If a definition change legitimately removes the last negative-min marker (e.g. by
+    declaring a max on 43128/43133/43134), this failure forces a conscious update
+    here rather than a quiet loss of coverage.
+    """
+    assert NEGATIVE_MIN_MARKERS, "no negative-min marker entities left — update or remove the marker contract tests"
+
+
 @pytest.mark.parametrize("entity", NEGATIVE_MIN_MARKERS, ids=[e["register"][0] for e in NEGATIVE_MIN_MARKERS])
 def test_a_negative_min_without_a_declared_max_is_only_a_marker(entity):
     """The literal's value must never survive as the bound — only its sign is read.

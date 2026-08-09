@@ -2988,7 +2988,8 @@ hybrid_sensors = [
                 "min": 0,
                 # No "max": protocol ceiling, like every other battery-current setpoint;
                 # the BMS mirror is an advisory device_limit attribute, not a bound
-                # (#464/#467). 300 A is under the 580 A a parallel pair reports (#351).
+                # (#464/#467). The removed 300 A literal sat under the 580 A a
+                # parallel pair reports (#351).
                 "step": 0.1,
             },
             {
@@ -3069,7 +3070,8 @@ hybrid_sensors = [
                 "min": 0,
                 # No "max": protocol ceiling, like every other battery-current setpoint;
                 # the BMS mirror is an advisory device_limit attribute, not a bound
-                # (#464/#467). 300 A is under the 580 A a parallel pair reports (#351).
+                # (#464/#467). The removed 300 A literal sat under the 580 A a
+                # parallel pair reports (#351).
                 "step": 0.1,
             },
             {
@@ -3150,7 +3152,8 @@ hybrid_sensors = [
                 "min": 0,
                 # No "max": protocol ceiling, like every other battery-current setpoint;
                 # the BMS mirror is an advisory device_limit attribute, not a bound
-                # (#464/#467). 300 A is under the 580 A a parallel pair reports (#351).
+                # (#464/#467). The removed 300 A literal sat under the 580 A a
+                # parallel pair reports (#351).
                 "step": 0.1,
             },
             {
@@ -3231,7 +3234,8 @@ hybrid_sensors = [
                 "min": 0,
                 # No "max": protocol ceiling, like every other battery-current setpoint;
                 # the BMS mirror is an advisory device_limit attribute, not a bound
-                # (#464/#467). 300 A is under the 580 A a parallel pair reports (#351).
+                # (#464/#467). The removed 300 A literal sat under the 580 A a
+                # parallel pair reports (#351).
                 "step": 0.1,
             },
             {
@@ -3312,7 +3316,8 @@ hybrid_sensors = [
                 "min": 0,
                 # No "max": protocol ceiling, like every other battery-current setpoint;
                 # the BMS mirror is an advisory device_limit attribute, not a bound
-                # (#464/#467). 300 A is under the 580 A a parallel pair reports (#351).
+                # (#464/#467). The removed 300 A literal sat under the 580 A a
+                # parallel pair reports (#351).
                 "step": 0.1,
             },
             {
@@ -3393,7 +3398,8 @@ hybrid_sensors = [
                 "min": 0,
                 # No "max": protocol ceiling, like every other battery-current setpoint;
                 # the BMS mirror is an advisory device_limit attribute, not a bound
-                # (#464/#467). 300 A is under the 580 A a parallel pair reports (#351).
+                # (#464/#467). The removed 300 A literal sat under the 580 A a
+                # parallel pair reports (#351).
                 "step": 0.1,
             },
             {
@@ -3480,7 +3486,8 @@ hybrid_sensors = [
                 "min": 0,
                 # No "max": protocol ceiling, like every other battery-current setpoint;
                 # the BMS mirror is an advisory device_limit attribute, not a bound
-                # (#464/#467). 300 A is under the 580 A a parallel pair reports (#351).
+                # (#464/#467). The removed 300 A literal sat under the 580 A a
+                # parallel pair reports (#351).
                 "step": 0.1,
             },
             {
@@ -3561,7 +3568,8 @@ hybrid_sensors = [
                 "min": 0,
                 # No "max": protocol ceiling, like every other battery-current setpoint;
                 # the BMS mirror is an advisory device_limit attribute, not a bound
-                # (#464/#467). 300 A is under the 580 A a parallel pair reports (#351).
+                # (#464/#467). The removed 300 A literal sat under the 580 A a
+                # parallel pair reports (#351).
                 "step": 0.1,
             },
             {
@@ -3642,7 +3650,8 @@ hybrid_sensors = [
                 "min": 0,
                 # No "max": protocol ceiling, like every other battery-current setpoint;
                 # the BMS mirror is an advisory device_limit attribute, not a bound
-                # (#464/#467). 300 A is under the 580 A a parallel pair reports (#351).
+                # (#464/#467). The removed 300 A literal sat under the 580 A a
+                # parallel pair reports (#351).
                 "step": 0.1,
             },
             {
@@ -3723,7 +3732,8 @@ hybrid_sensors = [
                 "min": 0,
                 # No "max": protocol ceiling, like every other battery-current setpoint;
                 # the BMS mirror is an advisory device_limit attribute, not a bound
-                # (#464/#467). 300 A is under the 580 A a parallel pair reports (#351).
+                # (#464/#467). The removed 300 A literal sat under the 580 A a
+                # parallel pair reports (#351).
                 "step": 0.1,
             },
             {
@@ -3804,7 +3814,8 @@ hybrid_sensors = [
                 "min": 0,
                 # No "max": protocol ceiling, like every other battery-current setpoint;
                 # the BMS mirror is an advisory device_limit attribute, not a bound
-                # (#464/#467). 300 A is under the 580 A a parallel pair reports (#351).
+                # (#464/#467). The removed 300 A literal sat under the 580 A a
+                # parallel pair reports (#351).
                 "step": 0.1,
             },
             {
@@ -3885,7 +3896,8 @@ hybrid_sensors = [
                 "min": 0,
                 # No "max": protocol ceiling, like every other battery-current setpoint;
                 # the BMS mirror is an advisory device_limit attribute, not a bound
-                # (#464/#467). 300 A is under the 580 A a parallel pair reports (#351).
+                # (#464/#467). The removed 300 A literal sat under the 580 A a
+                # parallel pair reports (#351).
                 "step": 0.1,
             },
             {
